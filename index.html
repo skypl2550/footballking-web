@@ -1,13 +1,35 @@
-# Welcome to Football King
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Football King - Web Version</title>
-  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    canvas {
+      border: 2px solid white;
+    }
+  </style>
 </head>
-<body style="margin:0;overflow:hidden">
-  <canvas id="gameCanvas"></canvas>
-  <script src="scripts/main.js"></script>
+<body>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // ตัวอย่างภาพจำลองเกม
+    ctx.fillStyle = '#0f0';
+    ctx.font = '30px Arial';
+    ctx.fillText("Football King Loading...", 180, 300);
+  </script>
 </body>
 </html>
