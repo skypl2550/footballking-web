@@ -1,35 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Football King - Web Version</title>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: white;
-      font-family: sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    canvas {
-      border: 2px solid white;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football King</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
-
-  <script>
-    const canvas = document.getElementById('gameCanvas');
-    const ctx = canvas.getContext('2d');
-
-    // ตัวอย่างภาพจำลองเกม
-    ctx.fillStyle = '#0f0';
-    ctx.font = '30px Arial';
-    ctx.fillText("Football King Loading...", 180, 300);
-  </script>
+  <h1>Welcome to Football King</h1>
+  <canvas id="gameCanvas"></canvas>
 </body>
 </html>
