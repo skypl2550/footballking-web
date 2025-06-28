@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football King</title>
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football King</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <h1>Football King - Web Version</h1>
-    <p>This is a placeholder for the WebGL build.</p>
-    <script>
-        // PWA installation
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        }
-    </script>
+  <h1>Welcome to Football King</h1>
+  <canvas id="gameCanvas"></canvas>
 </body>
 </html>
